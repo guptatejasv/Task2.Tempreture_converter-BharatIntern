@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempreture Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="tempreture section">
+        <div class="converter__container">
+
+            <div class="converter__title">
+                <h1>Tempreture Converter</h1>
+            </div>
+            
+        <form action="#">
+            <div class="converting__function">
+                                     <div class="select__div">
+                <span>
+                    <select name="to" id="from1" class="to" required>
+                        <option value="none" selected disabled hidden>Select an Option (From)</option>
+                        <option value="celsius" class="to2">Celsius</option>
+                        <option value="fahrenheit" class="to2">Fahrenheit</option>
+                        <option value="kelvin" class="to2">Kelvin</option>
+
+                    </select>
+                </span>
+                <span class="to1">To</span>
+                <span>
+                    <select name="to" id="to1" class="to">
+                        <option value="none" selected disabled hidden>Select an Option (To)</option>
+                        <option value="celsius" class="to3">Celsius</option>
+                        <option value="fahrenheit" class="to3">Fahrenheit</option>
+                        <option value="kelvin" class="to3">Kelvin</option>
+
+                    </select>
+                </span>
+                                    </div>
+               <div>
+                    <input type="text" class="from__input" id="from__input">
+                </div>
+               
+               <div style="text-align: center;">
+                    <button type="button" class="convert__btn" onclick="convert()">Convert</button>
+                </div>
+              
+               <div>
+                    <input type="text" id="to__input" class="from__input" >
+                </div>
+                
+
+            </div>
+        </form>
+        </div>
+    </section>
+    
+
+    <!-- javaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
